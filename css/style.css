@@ -1,0 +1,324 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+h1{
+    padding-top: 1rem;
+}
+
+.hr-line{
+    padding: 0;
+    margin: 0;
+    border: 2px solid white;
+}
+
+.navbar-brand img {
+    width: 4rem;
+    padding: 0px !important;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 1);
+    position: relative;
+}
+
+.navbar ul li a.nav-link {
+    color: white;
+    margin: 0.5rem;
+    padding: 0.5rem 1.5rem !important;
+    border: 1px solid white;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar ul li a.nav-link:hover {
+    transition: all 0.5s;
+    background-color: white;
+    color: black;
+}
+
+.navbar-toggler {
+    color: #949494;
+}
+
+i.nav-icon{
+    font-size: 2rem;
+    color: #949494;
+}
+
+.searchInput{
+    background-color: rgba(0, 0, 0, 0.39);
+    border: 1px solid white;
+}
+
+#home-section{
+    display: flex;
+    flex-direction: column;
+    color: #eee;
+    height: 65vh;
+    align-items: center;
+    padding: 1% 0%;
+}
+
+h1.title{
+    margin-top: 5rem !important;
+    text-align: center;
+    margin: 0 auto;
+    padding: .5rem .3rem;
+    font-weight: bolder;
+    color: white;
+}
+
+p.title-para{
+    width: 55vw;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    padding: .5rem .3rem;
+}
+
+.oreder-btn{
+    width: 10rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    background-color: #212529;
+    color: white;
+    border: 1px solid white;
+}
+
+@media (min-width: 991px){
+    #home-section{
+        height: 55vh;
+    }
+}
+
+@media (max-width: 991px) {
+
+#home-section{
+    height: 45vh;
+}
+
+    h1.title{
+        text-align: center;
+        margin: 0 auto;
+        font-weight: bolder;
+        color: white;
+        font-size: 3rem;
+    }
+    
+    p.title-para{
+        width: 100vw;
+        text-align: center;
+        margin: 0 auto;
+        color: white;
+        padding: 0 1rem;
+    }
+    
+    .oreder-btn{
+        width: 10rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+        background-color: #212529;
+        color: white;
+        border: 1px solid white;
+    }
+    .navbar ul li a.nav-link {
+        color: white;
+        margin: 0.5rem;
+        padding: 0.5rem 1rem !important;
+        border: 1px solid white;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+}
+
+@media screen and (min-width: 991px) {
+
+    #home-section{
+        height: 64vh;
+    }
+    h1.title{
+        font-size: 2.5rem;
+    }
+} 
+
+@media screen and (max-width: 991px) {
+
+    #home-section{
+        height: 50vh;
+    }
+    h1.title{
+        font-size: 1.5rem;
+    }
+
+    h1.title{
+        width: 80vw;
+        text-align: center;
+        font-weight: bolder;
+        color: white;
+        font-size: 1.7rem;
+    }
+
+    p.title-para{
+        width: 80vw;
+        text-align: center;
+        margin: 0 auto;
+        color: white;
+        padding: 0 1rem;
+    }
+}  
+
+/* products-div starts here */
+
+#Products-section{
+    padding: 1% 0;
+    background-color: black;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#Products-section h1{
+    color: white;
+    font-family: cursive;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.productsBox{
+    margin: .1rem .1rem;
+    padding: .5rem 1rem;
+    width: 100%;
+}
+
+.productsBox img{
+    width: 100%;
+}
+
+/* service box section starts here */
+#service{
+    background-color: black;
+}
+
+#service h1 {
+    font-family: cursive;
+}
+
+.serviceBox{
+    margin: .5rem .5rem;
+    background-color: red;
+    color: black;
+    background-color: #eee;
+}
+
+.serviceBox i{
+    font-size: 5rem;
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.serviceBox:hover{
+    background-color: rgb(53, 53, 53);
+    color: white;
+    cursor: pointer;
+}
+
+/* gallery section starts here */
+
+.galleryBox{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.galleryBox img{
+    width: 100%;
+    height: 100%;
+}
+
+.galleryBox img:hover{
+    transform: scale(1.1);
+}
+
+/* client section starts here */
+
+#client{
+    height: 60vh;
+}
+
+.carousel-item img{
+    width: 15rem;
+    margin: 0 auto;
+
+}
+
+.carousel-caption{
+    padding-top: 5rem;
+}
+
+.carousel-indicators{
+    bottom: -50px;
+}
+
+/* contact section starts here */
+.form-div{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 0px 15px 15px 15px;
+    border-radius: 5px;
+}
+
+#textarea{
+    resize: none;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+/* footer section starts here */
+
+footer h5{
+    font-size: 1rem;
+}
+
+.social-icons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-icons i{
+    padding: .5rem .5rem;
+    background: white;
+    border-radius: 35px;
+    color: black;
+    margin: 0 .1rem;
+    font-size: 1.2rem;
+    transition: transform .9s;
+}
+
+.social-icons i:hover{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    transform: rotate(360deg) translateZ(0);
+}
